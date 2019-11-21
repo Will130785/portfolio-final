@@ -1,0 +1,23 @@
+.skills {
+
+    &__content {
+
+
+        &--icons {
+            font-size: 5rem;
+            margin-top: 5rem;
+
+        }
+    }
+
+}
+
+.skill-icon {
+    padding: 0 1.5rem;
+    transition: all .5s;
+
+    &:hover {
+        color: $theme-color;
+
+    }
+}

@@ -1,0 +1,41 @@
+.portfolio {
+
+    &__card {
+        margin-bottom: 6rem;
+
+    }
+
+    &__image {
+
+
+        &--pic {
+            width: 100%;
+
+        }
+    }
+
+    &__footer {
+        background-color: $color-black;
+        color: $theme-color;
+        padding: 1rem 0;
+
+        &--icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+
+        &--title {
+            font-size: 3rem;
+            text-transform: uppercase;
+            text-align: center;
+
+        }
+    }
+
+    &-icon {
+        font-size: 2.5rem;
+        margin-right: 1rem;
+    }
+}

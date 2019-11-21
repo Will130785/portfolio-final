@@ -1,0 +1,44 @@
+.header {
+    background-image: linear-gradient(to top right,
+                     rgba(255, 255, 255, .7),
+                    rgba(255, 255, 255, .4)),
+                     url("../img/iceland.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    position: relative;
+    margin-bottom: $gutter-vertical;
+
+    &__content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        color: $theme-color;
+        font-weight: 900;
+
+        &--main {
+            display: block;
+            animation: moveInLeft 2s;
+            font-size: 8rem;
+            letter-spacing: 1rem;
+            text-shadow: 0 2rem 2rem $color-black;
+
+        }
+
+        &--sub {
+            display: block;
+            animation: moveInRight 2s;
+            font-size: 3.8rem;
+            letter-spacing: 1rem;
+            text-shadow: 0 1rem 1rem $color-black;
+        }
+    }
+}

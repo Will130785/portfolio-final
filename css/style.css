@@ -1,0 +1,164 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    opacity: .8;
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    opacity: .8;
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Saira Condensed", sans-serif; }
+
+.title {
+  text-transform: uppercase;
+  color: #ffc107;
+  font-size: 4rem; }
+
+.paragraph {
+  font-size: 1.6rem; }
+
+.sub-title {
+  font-size: 3rem; }
+
+.text {
+  display: inline-block;
+  margin-right: 2rem;
+  font-size: 1.3rem; }
+
+.row {
+  max-width: 120rem;
+  margin: 0 auto; }
+  .row:last-child {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+[class^="col-"] {
+  float: left; }
+  [class^="col-"]:not(:last-child) {
+    margin-right: 6rem; }
+
+.col-1-of-2 {
+  width: calc((100% - 6rem) / 2); }
+
+.col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3); }
+
+.col-2-of-3 {
+  width: calc((2 *(100% - 2 * 6rem) / 3) + 6rem); }
+
+.col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4); }
+
+.col-2-of-4 {
+  width: calc((2 *(100% - 3 * 6rem) / 4) + 6rem); }
+
+.col-3-of-4 {
+  width: calc((3 *(100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.header {
+  background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4)), url("../img/iceland.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  position: relative;
+  margin-bottom: 8rem; }
+  .header__content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .header__title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffc107;
+    font-weight: 900; }
+    .header__title--main {
+      display: block;
+      animation: moveInLeft 2s;
+      font-size: 8rem;
+      letter-spacing: 1rem;
+      text-shadow: 0 2rem 2rem #000; }
+    .header__title--sub {
+      display: block;
+      animation: moveInRight 2s;
+      font-size: 3.8rem;
+      letter-spacing: 1rem;
+      text-shadow: 0 1rem 1rem #000; }
+
+.navbar-dark .navbar-brand {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #ffc107; }
+
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #ffc107; }
+
+.about__links {
+  font-size: 5rem; }
+
+.link {
+  border-radius: 50%;
+  background-color: #ffc107;
+  padding: 1rem; }
+
+.portfolio__card {
+  margin-bottom: 6rem; }
+
+.portfolio__image--pic {
+  width: 100%; }
+
+.portfolio__footer {
+  background-color: #000;
+  color: #ffc107;
+  padding: 1rem 0; }
+  .portfolio__footer--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0; }
+  .portfolio__footer--title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center; }
+
+.portfolio-icon {
+  font-size: 2.5rem;
+  margin-right: 1rem; }
+
+.skills__content--icons {
+  font-size: 5rem;
+  margin-top: 5rem; }
+
+.skill-icon {
+  padding: 0 1.5rem;
+  transition: all .5s; }
+  .skill-icon:hover {
+    color: #ffc107; }
