@@ -1,6 +1,7 @@
 .about {
     height: 100vh;
     
+    
     @include respond(tab-port) {
         width: 75%;
         margin: 0 auto;
@@ -13,13 +14,29 @@
     &__links {
         margin-top: 15rem;
         font-size: 5rem;
+        text-align: center;
 
+        a {
+            padding: 2rem;
+        }
+
+    }
+
+    &__contact {
+        font-size: 2.5rem;
     }
 }
 
 .link {
     border-radius: 50%;
     background-color: $theme-color;
+    color: $color-black;
     padding: 1rem;
+    transition: all 1s;
+
+    &:hover {
+        background-color: $color-black;
+        color: $theme-color;
+    }
 
 }

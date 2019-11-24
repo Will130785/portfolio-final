@@ -3,7 +3,7 @@
                      rgba(255, 255, 255, .7),
                     rgba(255, 255, 255, .4)),
                      url("../img/iceland.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     height: 100vh;
     position: relative;
@@ -21,24 +21,25 @@
     &__title {
         text-align: center;
         text-transform: uppercase;
-        color: $theme-color;
+        color: $color-black;
         font-weight: 900;
 
         &--main {
             display: block;
-            animation: moveInLeft 2s;
+            animation: moveUpBottom 2s;
             font-size: 8rem;
             letter-spacing: 1rem;
-            text-shadow: 0 2rem 2rem $color-black;
+            text-shadow: 0 .5rem .5rem $color-black;
 
         }
 
         &--sub {
             display: block;
-            animation: moveInRight 2s;
+            animation: moveUpBottom 2s 1s;
             font-size: 3.8rem;
             letter-spacing: 1rem;
-            text-shadow: 0 1rem 1rem $color-black;
+            text-shadow: 0 .2rem .2rem $color-black;
+            animation-fill-mode: backwards;
         }
     }
 }

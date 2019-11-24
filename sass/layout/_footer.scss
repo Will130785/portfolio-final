@@ -2,6 +2,8 @@
     background-color: $color-head-foot;
     margin: 0;
 
+    @include clearfix;
+
     &__paragraph {
         color: $theme-color;
         padding: 5rem 0;
