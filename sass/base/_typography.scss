@@ -2,6 +2,7 @@
     text-transform: uppercase;
     color: $theme-color;
     font-size: 4rem;
+    padding-top: 4rem;
 }
 
 .paragraph {
@@ -16,4 +17,11 @@
     display: inline-block;
     margin-right: 2rem;
     font-size: 1.3rem;
+    text-decoration: none;
+    color: $theme-color;
+
+    &:hover {
+        text-decoration: none;
+        color: white;
+    }
 }

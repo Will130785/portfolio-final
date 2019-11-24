@@ -61,7 +61,8 @@ body {
 .title {
   text-transform: uppercase;
   color: #ffc107;
-  font-size: 4rem; }
+  font-size: 4rem;
+  padding-top: 4rem; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -72,10 +73,15 @@ body {
 .text {
   display: inline-block;
   margin-right: 2rem;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #ffc107; }
+  .text:hover {
+    text-decoration: none;
+    color: white; }
 
 .row {
-  max-width: 120rem;
+  max-width: 115rem;
   margin: 0 auto; }
   .row:last-child {
     margin-bottom: 8rem; }
@@ -161,7 +167,7 @@ body {
   box-shadow: 0 1rem 1rem; }
 
 .portfolio__image {
-  height: 20rem; }
+  height: 19rem; }
   .portfolio__image--pic {
     width: 100%;
     height: auto; }
