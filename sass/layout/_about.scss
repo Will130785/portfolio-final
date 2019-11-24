@@ -1,11 +1,17 @@
 .about {
+    height: 100vh;
+    
+    @include respond(tab-port) {
+        width: 75%;
+        margin: 0 auto;
+    }
 
     &__paragraph {
-
-
+        margin-top: 15rem;
     }
 
     &__links {
+        margin-top: 15rem;
         font-size: 5rem;
 
     }

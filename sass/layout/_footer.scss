@@ -1,0 +1,11 @@
+.footer {
+    background-color: $color-head-foot;
+    margin: 0;
+
+    &__paragraph {
+        color: $theme-color;
+        padding: 5rem 0;
+        text-align: center;
+
+    }
+}

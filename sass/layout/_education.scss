@@ -1,0 +1,19 @@
+.education {
+    height: 100vh;
+    position: relative;
+
+    @include respond(tab-port) {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    &__content {
+        position: absolute;
+        top: 40%;
+
+        @include respond(tab-port) {
+            position: relative;
+        }
+    }
+
+}

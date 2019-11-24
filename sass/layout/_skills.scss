@@ -1,7 +1,15 @@
 .skills {
+    height: 100vh;
+    position: relative;
+
+    @include respond(tab-port) {
+        width: 75%;
+        margin: 0 auto;
+    }
 
     &__content {
-
+        position: absolute;
+        top: 40%;
 
         &--icons {
             font-size: 5rem;
