@@ -24,6 +24,11 @@
     padding: 0 1.5rem;
     transition: all .5s;
 
+    &-react {
+        position: relative;
+        bottom: .5rem;
+    }
+
     &:hover {
         color: $theme-color;
 
