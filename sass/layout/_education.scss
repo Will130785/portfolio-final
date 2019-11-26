@@ -11,10 +11,16 @@
         position: absolute;
         top: 40%;
 
+
         @include respond(tab-port) {
             position: relative;
             margin-top: -1rem;
         }
+
+        @include respond(phone) {
+            font-size: 1.8rem;
+        }
+
     }
 
 }

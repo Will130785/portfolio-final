@@ -73,7 +73,7 @@ body {
       font-size: 3rem; } }
   @media (max-width: 37.5em) {
     .text {
-      font-size: 2.8rem; } }
+      font-size: 2.3rem; } }
   .text:hover {
     text-decoration: none;
     color: white; }
@@ -202,7 +202,12 @@ body {
     text-align: center; }
     @media (max-width: 56.25em) {
       .about__links {
-        margin-top: 10rem; } }
+        margin-top: 5rem;
+        font-size: 2.5rem; } }
+    @media (max-width: 37.5em) {
+      .about__links {
+        margin-top: 10rem;
+        font-size: 5rem; } }
     .about__links a {
       padding: 2rem; }
   .about__contact {
@@ -232,6 +237,9 @@ body {
       .education__content {
         position: relative;
         margin-top: -1rem; } }
+    @media (max-width: 37.5em) {
+      .education__content {
+        font-size: 1.8rem; } }
 
 .footer {
   background-color: #212529;
@@ -288,7 +296,7 @@ body {
       font-size: 3rem; } }
   @media (max-width: 37.5em) {
     .portfolio-icon {
-      font-size: 2.8rem; } }
+      font-size: 2.5rem; } }
 
 .skills {
   height: 75vh;
