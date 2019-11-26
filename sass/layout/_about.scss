@@ -9,12 +9,28 @@
 
     &__paragraph {
         margin-top: 5rem;
+
+        @include respond(tab-port) {
+            margin-top: 2rem;
+        }
+
+        @include respond(phone) {
+            margin-top: 0;
+        }
     }
 
     &__links {
         margin-top: 15rem;
         font-size: 5rem;
         text-align: center;
+
+        @include respond(tab-port) {
+            margin-top: 10rem;
+        }
+
+        @include respond(tab-phone) {
+            margin-top: 5rem;
+        }
 
         a {
             padding: 2rem;

@@ -9,6 +9,10 @@
     position: relative;
     margin-bottom: $gutter-vertical;
 
+    @include respond(phone) {
+        height: 75vh;
+    }
+
     &__content {
         width: 100%;
         position: absolute;
@@ -31,6 +35,10 @@
             letter-spacing: 1rem;
             text-shadow: 0 .5rem .5rem $color-black;
 
+            @include respond(phone) {
+                font-size: 7rem;
+            }
+
         }
 
         &--sub {
@@ -40,6 +48,10 @@
             letter-spacing: 1rem;
             text-shadow: 0 .2rem .2rem $color-black;
             animation-fill-mode: backwards;
+
+            @include respond(phone) {
+                font-size: 3.2rem;
+            }
         }
     }
 }

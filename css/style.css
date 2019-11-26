@@ -138,6 +138,9 @@ body {
   height: 100vh;
   position: relative;
   margin-bottom: 8rem; }
+  @media (max-width: 37.5em) {
+    .header {
+      height: 75vh; } }
   .header__content {
     width: 100%;
     position: absolute;
@@ -155,6 +158,9 @@ body {
       font-size: 8rem;
       letter-spacing: 1rem;
       text-shadow: 0 0.5rem 0.5rem #000; }
+      @media (max-width: 37.5em) {
+        .header__title--main {
+          font-size: 7rem; } }
     .header__title--sub {
       display: block;
       animation: moveUpBottom 2s 1s;
@@ -162,6 +168,9 @@ body {
       letter-spacing: 1rem;
       text-shadow: 0 0.2rem 0.2rem #000;
       animation-fill-mode: backwards; }
+      @media (max-width: 37.5em) {
+        .header__title--sub {
+          font-size: 3.2rem; } }
 
 .navbar-dark .navbar-brand {
   font-size: 2rem;
@@ -181,10 +190,19 @@ body {
       margin: 0 auto; } }
   .about__paragraph {
     margin-top: 5rem; }
+    @media (max-width: 56.25em) {
+      .about__paragraph {
+        margin-top: 2rem; } }
+    @media (max-width: 37.5em) {
+      .about__paragraph {
+        margin-top: 0; } }
   .about__links {
     margin-top: 15rem;
     font-size: 5rem;
     text-align: center; }
+    @media (max-width: 56.25em) {
+      .about__links {
+        margin-top: 10rem; } }
     .about__links a {
       padding: 2rem; }
   .about__contact {
@@ -213,7 +231,7 @@ body {
     @media (max-width: 56.25em) {
       .education__content {
         position: relative;
-        margin-top: 10rem; } }
+        margin-top: -1rem; } }
 
 .footer {
   background-color: #212529;
