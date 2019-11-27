@@ -3,7 +3,7 @@
                      rgba(255, 255, 255, .7),
                     rgba(255, 255, 255, .4)),
                      url("../img/iceland.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
     height: 100vh;
     position: relative;
@@ -11,6 +11,7 @@
 
     @include respond(phone) {
         height: 75vh;
+        background-position: right;
     }
 
     &__content {
