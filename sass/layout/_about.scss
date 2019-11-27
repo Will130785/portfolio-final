@@ -44,6 +44,18 @@
 
     &__contact {
         font-size: 2.5rem;
+
+        @include respond(tab-port) {
+            display: inline-block;
+            position: relative;
+            bottom: 1.6rem;
+            padding-right: 2rem;
+        }
+
+        @include respond(phone) {
+            display: block;
+        }
+
     }
 }
 
