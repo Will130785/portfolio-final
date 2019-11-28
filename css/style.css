@@ -181,7 +181,8 @@ body {
 .navbar-dark .navbar-nav .nav-link {
   font-size: 2rem;
   text-transform: uppercase;
-  color: #ffc107; }
+  color: #ffc107;
+  margin: 0 3rem; }
 
 .about {
   height: 100vh; }
