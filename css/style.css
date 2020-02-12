@@ -192,6 +192,10 @@ body {
     border-radius: .5rem;
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.6);
     color: #ffc107; }
+    @media (max-width: 56.25em) {
+      .modal__content {
+        width: 80vw;
+        top: 20%; } }
 
 .about-modal {
   width: 100%;
