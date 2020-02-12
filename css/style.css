@@ -173,6 +173,58 @@ body {
         .header__title--sub {
           font-size: 3.2rem; } }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .modal__content {
+    width: 45%;
+    margin: 0 auto;
+    position: relative;
+    top: 25%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: .5rem;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.6);
+    color: #ffc107; }
+
+.about-modal {
+  width: 100%;
+  height: 100%; }
+
+.about-modal h4 {
+  padding-top: 2rem;
+  font-size: 4rem; }
+
+.about-modal p {
+  font-size: 1.6rem;
+  color: #000;
+  text-align: left;
+  padding: 2rem 5rem 5rem 5rem; }
+
+.about-1 {
+  display: none; }
+
+.about-2 {
+  display: none; }
+
+.about-3 {
+  display: none; }
+
+.about-4 {
+  display: none; }
+
+.about-5 {
+  display: none; }
+
+.about-6 {
+  display: none; }
+
 .navbar-dark .navbar-brand {
   font-size: 2rem;
   text-transform: uppercase;
@@ -274,13 +326,23 @@ body {
   box-shadow: 0 1rem 1rem; }
 
 .portfolio__image {
-  height: 19rem; }
+  height: 19rem;
+  position: relative; }
   @media (max-width: 56.25em) {
     .portfolio__image {
       width: 100%;
       height: 50%; } }
+  .portfolio__image--search {
+    position: absolute;
+    right: 0;
+    color: #ffc107;
+    font-size: 4rem;
+    margin: 1rem;
+    text-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.8);
+    cursor: pointer; }
   .portfolio__image--pic {
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
 
 .portfolio__footer {
   background-color: #000;
